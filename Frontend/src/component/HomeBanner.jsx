@@ -57,7 +57,7 @@ const HomeBanner = () => {
                 <h1 className={`font-["otomanopee-one"] text-[38px] text-[#131313] mb-3 transition-opacity duration-500 sm:text-[44px] sm:mb-4 md:text-[56px] md:tracking-wide lg:text-[40px] xl:text-[56px] xl:mb-5 2xl:text-[72px] ${fade ? 'opacity-100' : 'opacity-0'}`}>{subtitle}</h1>
                 <div className='flex items-center gap-2 mb-5 xl:gap-4'>
                     <div className='w-[47px] h-[2px] bg-black md:w-[56px] xl:w-[78px] '></div>
-                    <p className={`font-["Red Hat Display"] text-[18px] transition-opacity duration-500 sm:text-[20px] md:text-[22px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] ${fade ? 'opacity-100' : 'opacity-0'}`}>Trusted Security Solutions</p>
+                    <p className={`font-["Red_Hat_Display"] text-[18px] transition-opacity duration-500 sm:text-[20px] md:text-[22px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] ${fade ? 'opacity-100' : 'opacity-0'}`}>Trusted Security Solutions</p>
                 </div>
                 <p className={`font-["Philosopher"] text-[#3F3F3F] text-sm font-medium mb-4 transition-opacity duration-500 sm:text-[18px] sm:leading-6 sm:mb-5 md:text-center md:max-w-[670px] md:mb-6 lg:text-base lg:text-start xl:text-[18px] xl:max-w-[570px] xl:mb-11 ${fade ? 'opacity-100' : 'opacity-0'}`}>{description}</p>
                 <div className='flex flex-row gap-3 md:gap-6'>

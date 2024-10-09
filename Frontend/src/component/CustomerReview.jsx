@@ -18,13 +18,13 @@ const CustomerReview = () => {
                     <img src={image2} alt="" className='h-[40px] w-[40px] lg:h-[60px] lg:w-[60px] rounded-full object-cover' />
                 </div>
                 <div className='space-y-4 lg:space-y-6'>
-                    <p className='text-base lg:text-2xl text-[#131313] text-center font-["Red Hat Display"]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <p className='text-base lg:text-2xl text-[#131313] text-center font-["Red_Hat_Display"]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     <p className='text-sm leading-4 lg:text-lg lg:leading-5 text-[#131313] text-center font-["Philosopher"]'>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq ”</p>
                 </div>
                 <div className='flex items-start justify-center mx-auto gap-1 md:gap-2 max-w-[400px] px-5 md:px-0'>
                     <img src={image3} alt="" className='h-[80px] w-[80px] md:h-[90px] md:w-[90px] lg:h-[110px] lg:w-[110px] rounded-full object-cover' />
                     <div className='text-[#131313] space-y-0.5'>
-                        <h1 className='font-["Red Hat Display"] md:text-lg lg:text-2xl'>Ayan Chakraborty</h1>
+                        <h1 className='font-["Red_Hat_Display"] md:text-lg lg:text-2xl'>Ayan Chakraborty</h1>
                         <p className='font-["Philosopher"] text-sm lg:text-base leading-4 lg:leading-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e</p>
                         <p className='md:text-lg lg:text-2xl text-[#AA771C]'>&#9733;&#9733;&#9733;&#9733;<span className='text-[#D9D9D9]'>&#9733;</span></p>
                         <p className='font-["Philosopher"] lg:text-lg'>3/10/2024</p>

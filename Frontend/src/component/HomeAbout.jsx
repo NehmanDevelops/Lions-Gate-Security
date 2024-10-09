@@ -12,7 +12,7 @@ const HomeAbout = () => {
     return (
         <>
             {/* Testimonials */}
-            <div className=' w-full h-full lg:bg-gradient-to-t from-[rgba(168,139,235,0.5)] via-[#ECECEC] to-[#ECECEC]'>
+            <div className=' w-full h-full lg:bg-gradient-to-t from-[#A88BEB]/50 via-[#ECECEC] to-[#ECECEC]'>
                 <div className='grid grid-cols-2 md:grid-cols-3 px-5 xl:px-1 lg:flex justify-center mx-auto gap-5 xl:gap-9 mt-24 lg:mt-32 text-white max-w-[400px] md:max-w-[600px] lg:max-w-[1150px] xl:max-w-[1270px] 2xl:max-w-[1365px] '>
                     <div className='lg:w-[190px] lg:h-[195px] xl:w-[210px] xl:h-[215px] bg-[#3E187A] rounded-md flex flex-col items-center justify-between py-2 lg:py-3 px-2 space-y-2 lg:space-y-0'>
                         <img src={Surveillance} alt="" className='xl:w-20 xl:h-20 lg:w-16 lg:h-16 w-12 h-12' />
@@ -48,7 +48,7 @@ const HomeAbout = () => {
             </div>
 
             {/* About */}
-            <div className='w-full h-full bg-gradient-to-t from-[rgba(168,139,235,0.5)] via-[rgba(168,139,235,0.5)] to-[#ECECEC] lg:bg-gradient-to-t lg:from-[rgba(168,139,235,0.5)] lg:via-[rgba(168,139,235,0.5)] lg:to-[rgba(168,139,235,0.5)]'>
+            <div className='w-full h-full bg-gradient-to-t from-[#A88BEB]/50 via-[#A88BEB]/50 to-[#ECECEC] lg:bg-gradient-to-t lg:from-[#A88BEB]/50 lg:via-[#A88BEB]/50 lg:to-[#A88BEB]/50'>
                 <div className='lg:flex items-center space-y-6 lg:gap-14 2xl:gap-28 mx-auto max-w-[400px] md:max-w-[600px] lg:max-w-[1150px] xl:max-w-[1330px] 2xl:max-w-[1365px] pt-16 lg:pt-2 pb-8 lg:pb-0 px-4 xl:px-1'>
                     <div className='lg:hidden'>
                         <h1 className='font-["otomanopee-one"] text-[28px] text-[#494949] pb-3'>WELCOME TO</h1>
