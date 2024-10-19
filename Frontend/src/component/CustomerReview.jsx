@@ -8,7 +8,7 @@ import image4 from "../assets/s4.jpeg"
 const CustomerReview = () => {
     return (
         <>
-            <h1 className='mt-[34px] md:mt-[80px] xl:mt-[192px] mb-14 lg:mb-16 text-[#131313] font-["otomanopee-one"] text-center text-[32px] md:text-[44px] xl:text-[56px]'>WHAT PEOPLE SAY ABOUT US</h1>
+            <h1 className='mt-[110px] md:mt-[90px] xl:mt-[192px] mb-14 lg:mb-16 text-[#131313] font-["otomanopee-one"] text-center text-[32px] md:text-[44px] xl:text-[56px]'>WHAT PEOPLE SAY ABOUT US</h1>
             <div className='md:max-w-[500px] lg:max-w-[700px] px-3 lg:px-0 mx-auto space-y-10 lg:space-y-12'>
                 <div className='flex items-center justify-center space-x-2 lg:space-x-4'>
                     <img src={image1} alt="" className='h-[40px] w-[40px] lg:h-[60px] lg:w-[60px] rounded-full object-cover' />
@@ -26,7 +26,7 @@ const CustomerReview = () => {
                     <div className='text-[#131313] space-y-0.5'>
                         <h1 className='font-["Red_Hat_Display"] md:text-lg lg:text-2xl'>Ayan Chakraborty</h1>
                         <p className='font-["Philosopher"] text-sm lg:text-base leading-4 lg:leading-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e</p>
-                        <p className='md:text-lg lg:text-2xl text-[#AA771C]'>&#9733;&#9733;&#9733;&#9733;<span className='text-[#D9D9D9]'>&#9733;</span></p>
+                        <p className='md:text-lg lg:text-2xl text-[#DAAE00]'>&#9733;&#9733;&#9733;&#9733;<span className='text-[#D9D9D9]'>&#9733;</span></p>
                         <p className='font-["Philosopher"] lg:text-lg'>3/10/2024</p>
                     </div>
                 </div>

@@ -13,7 +13,7 @@ import career_about from "../assets/career_about.png";
 const CareerAll = () => {
     return (
         <>
-            <h1 className='font-["otomanopee-one"] text-[26px] md:text-[38px] xl:text-[50px] text-center py-5 md:pt-2 md:pb-0'>WHERE  PROTECTION  MEETS  PRECISION</h1>
+            <h1 className='font-["otomanopee-one"] text-[26px] md:text-[38px] xl:text-[50px] text-center py-5 md:pt-2 md:pb-0'>WHERE PROTECTION MEETS PRECISION</h1>
             <div className='md:flex justify-between space-y-16 md:space-y-0 max-w-fit md:max-w-none xl:max-w-[1400px] mx-auto py-2 px-5 pb-20'>
                 <div className='max-w-[450px] md:max-w-[220px] lg:max-w-[300px] xl:max-w-[360px] space-y-4'>
                     <img src={about1} alt="" />
@@ -73,7 +73,7 @@ const CareerAll = () => {
                         <div className=''>
                             <h1 className='font-["otomanopee-one"] text-3xl lg:text-4xl xl:text-5xl text-[#131313]'>JOIN OUR TEAM</h1>
                         </div>
-                        <p className='font-["Philosopher"] text-[#131313] leading-[15px] xl:leading-5 text-sm xl:text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                        <p className='font-["Philosopher"] text-[#212121] leading-[15px] xl:leading-5 text-sm xl:text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                         <div className='flex flex-row gap-3 md:gap-5 pt-5 lg:pt-0'>
                             <button className='font-["Montserrat"] text-white font-bold bg-gradient-to-l from-[#6E72FC] to-[#AD1DEB] xl:text-base lg:text-sm text-xs xl:px-6 xl:py-4 lg:px-5 py-3 px-3'>JOIN US NOW</button>
                             <button className='font-["Montserrat"] font-bold border-2 border-[#AD1DEB] xl:text-base lg:text-sm text-xs xl:px-6 xl:py-4 lg:px-5 py-3 px-3'>CONTACT US</button>

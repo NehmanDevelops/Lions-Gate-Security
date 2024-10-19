@@ -4,7 +4,7 @@ import email_us from "../assets/email_us.png";
 import our_location from "../assets/our_location.png";
 
 
-const ContactBanner = () => {
+const ContactAll = () => {
     return (
         <>
             <h1 className='font-["otomanopee-one"] text-[32px] md:text-[44px] xl:text-[56px] text-center py-5 md:pt-2 md:pb-0'>GET IN TOUCH</h1>
@@ -40,4 +40,4 @@ const ContactBanner = () => {
     )
 }
 
-export default ContactBanner
+export default ContactAll

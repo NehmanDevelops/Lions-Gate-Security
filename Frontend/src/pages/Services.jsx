@@ -1,18 +1,18 @@
 import React from 'react'
 import Navbar from '../component/Navbar'
-import ContactAll from '../component/ContactAll'
+import ServicesAll from '../component/ServicesAll'
 import Footer from '../component/Footer'
 
-const Contact = () => {
+const Services = () => {
     return (
         <>
             <body className='bg-[#ECECEC]'>
                 <Navbar />
-                <ContactAll />
+                <ServicesAll />
                 <Footer />
             </body>
         </>
     )
 }
 
-export default Contact
+export default Services
