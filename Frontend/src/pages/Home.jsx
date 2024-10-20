@@ -1,13 +1,12 @@
 import React from 'react'
-import Navbar from '../component/Navbar'
-import HomeBanner from '../component/HomeBanner'
-import HomeAbout from '../component/HomeAbout'
-import HomeServices from '../component/HomeServices'
-import CustomerReview from '../component/CustomerReview'
-import TrustedClients from '../component/TrustedClients'
-import Footer from '../component/Footer'
-import HomeCertificate from '../component/HomeCertificate'
-
+import Navbar from '../Components/Navbar'
+import HomeBanner from '../Components/HomeBanner'
+import HomeAbout from '../Components/HomeAbout'
+import HomeServices from '../Components/HomeServices'
+import HomeCertificate from '../Components/HomeCertificate'
+import CustomerReview from '../Components/CustomerReview'
+import TrustedClients from '../Components/TrustedClients'
+import Footer from '../Components/Footer'
 
 const Home = () => {
     return (

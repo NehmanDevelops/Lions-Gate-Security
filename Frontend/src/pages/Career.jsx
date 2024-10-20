@@ -1,14 +1,18 @@
 import React from 'react'
-import Navbar from '../component/Navbar'
-import CareerAll from '../component/CareerAll'
-import Footer from '../component/Footer'
+import Navbar from '../Components/Navbar'
+import CareerBanner from '../Components/CareerBanner'
+import CareerIntro from '../Components/CareerIntro'
+import CareerJoin from '../Components/CareerJoin'
+import Footer from '../Components/Footer'
 
 const Career = () => {
     return (
         <>
             <body className='bg-[#ECECEC]'>
                 <Navbar />
-                <CareerAll />
+                <CareerBanner />
+                <CareerIntro />
+                <CareerJoin />
                 <Footer />
             </body>
         </>

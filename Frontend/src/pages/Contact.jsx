@@ -1,14 +1,14 @@
 import React from 'react'
-import Navbar from '../component/Navbar'
-import ContactAll from '../component/ContactAll'
-import Footer from '../component/Footer'
+import Navbar from '../Components/Navbar'
+import ContactBanner from '../Components/ContactBanner'
+import Footer from '../Components/Footer'
 
 const Contact = () => {
     return (
         <>
             <body className='bg-[#ECECEC]'>
                 <Navbar />
-                <ContactAll />
+                <ContactBanner />
                 <Footer />
             </body>
         </>
