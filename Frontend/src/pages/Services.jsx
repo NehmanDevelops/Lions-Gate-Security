@@ -7,7 +7,7 @@ import Footer from '../Components/Footer'
 const Services = () => {
     return (
         <>
-            <body className='bg-[#ECECEC] overflow-x-hidden'>
+            <body className='bg-[#ECECEC]'>
                 <Navbar />
                 <ServicesBanner />
                 <ServicesAll />
