@@ -21,6 +21,7 @@ const Navbar = () => {
             </div>
 
             {/* Navbar */}
+            {/* FOR MOBILE, TABLET AND SMALL LAPTOPS */}
             <div className='sticky top-0 flex justify-between items-center px-5 py-1 lg:hidden z-50 bg-[#ECECEC]/35 backdrop-blur-lg'>
                 <div className='logo flex items-center space-x-2'>
                     <img src={logo} alt="logo" className='w-[47px] h-[55px]' />
@@ -49,6 +50,7 @@ const Navbar = () => {
                 </div>
             </div>
 
+            {/* FOR LARGE LAPTOPS AND DESKTOP */}
             <div className='sticky top-0 px-6 xl:px-20 z-50 bg-[#ECECEC]/35 backdrop-blur-lg'>
                 <div className='hidden lg:flex justify-between items-center w-full px-14 py-1 rounded-[10px]'>
                     <div className='flex items-center gap-2'>
