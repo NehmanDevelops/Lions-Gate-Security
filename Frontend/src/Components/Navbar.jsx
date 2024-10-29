@@ -63,16 +63,17 @@ const Navbar = () => {
                     </div>
                     <div className='items flex items-center gap-72'>
                         <div className='flex'>
-                            <ul className='flex font-["Philosopher"] text-[15px] font-extrabold space-x-5 xl:space-x-10 items-center cursor-pointer'>
-                                <li onClick={() => navigate('/')}>HOME</li>
-                                <li onClick={() => navigate('/about')}>ABOUT</li>
-                                <li onClick={() => navigate('/services')}>SERVICES</li>
-                                <li onClick={() => navigate('/career')}>CAREERS</li>
-                                <li onClick={() => navigate('/contact')}>CONTACT</li>
-                                <button className='text-white bg-gradient-to-r from-[#3E187A] to-[#994ECC] p-2 rounded-md'>BROCHURE</button>
+                            <ul className='nav-ul flex font-["Philosopher"] text-[15px] font-extrabold space-x-5 xl:space-x-10 items-center cursor-pointer'>
+                                <li className='relative group' onClick={() => navigate('/')}>HOME</li>
+                                <li className='relative group' onClick={() => navigate('/about')}>ABOUT</li>
+                                <li className='relative group' onClick={() => navigate('/services')}>SERVICES</li>
+                                <li className='relative group' onClick={() => navigate('/career')}>CAREERS</li>
+                                <li className='relative group' onClick={() => navigate('/contact')}>CONTACT</li>
+                                <button className='bg-gradient-to-r from-[#AD1DEB] to-[#6E72FC] text-white p-2 rounded-md transition-all transform hover:scale-110 duration-150 ease-in'>BROCHURE</button>
                             </ul>
                         </div>
                     </div>
+
                 </div>
             </div>
         </>

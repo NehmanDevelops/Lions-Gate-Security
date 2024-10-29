@@ -1,9 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom"
+import aos from 'aos'
+import "aos/dist/aos.css"
 import banner1 from "../assets/banner1.png";
 import banner2 from "../assets/banner2.png";
 import banner3 from "../assets/banner3.png";
 
 const HomeBanner = () => {
+    const navigate = useNavigate()
+    useEffect(() => {
+        aos.init({
+            once: "true",
+        })
+    }, [])
+
     const banners = [
         {
             img: banner1,
@@ -46,7 +56,7 @@ const HomeBanner = () => {
     const { img, title, subtitle, description, button1, button2 } = banners[currentBannerIndex];
 
     return (
-        <div className='w-screen h-auto flex flex-col px-5 py-1 items-center pb-0 mx-auto gap-5 sm:gap-10 md:gap-12 lg:flex-row-reverse lg:gap-10 lg:pt-16 lg:max-w-[1138px] xl:pl-8 xl:max-w-[1338px] 2xl:max-w-[1518px] 2xl:gap-6 2xl:pt-8 2xl:pl-14 2xl:pr-0'>
+        <div className='w-screen h-auto flex flex-col px-5 py-1 items-center pb-0 mx-auto gap-5 sm:gap-10 md:gap-12 lg:flex-row-reverse lg:gap-10 lg:pt-16 lg:max-w-[1138px] xl:pl-8 xl:max-w-[1338px] 2xl:max-w-[1518px] 2xl:gap-6 2xl:pt-8 2xl:pl-10 2xl:pr-0' data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="600">
             <img
                 src={img}
                 alt=""
@@ -61,8 +71,11 @@ const HomeBanner = () => {
                 </div>
                 <p className={`font-["Philosopher"] text-[#3F3F3F] text-sm font-medium mb-4 transition-opacity duration-500 sm:text-[18px] sm:leading-6 sm:mb-5 md:text-center md:max-w-[670px] md:mb-6 lg:text-base lg:text-start xl:text-[18px] xl:max-w-[570px] xl:mb-11 ${fade ? 'opacity-100' : 'opacity-0'}`}>{description}</p>
                 <div className='flex flex-row gap-3 md:gap-6'>
-                    <button className={`font-["Montserrat"] font-bold text-xs px-5 py-4 sm:text-[13px] md:text-base md:px-7 md:py-5 lg:text-[13px] lg:px-5 lg:py-4 xl:text-base xl:px-9 bg-gradient-to-r ${button1.gradient} ${button1.textColor}`}>{button1.text}</button>
-                    <button className={`font-["Montserrat"] text-xs font-bold px-5 py-4 sm:text-[13px] md:text-base md:px-7 md:py-5 lg:text-[13px] lg:px-5 lg:py-4 border-2 xl:text-base xl:px-9 ${button2.border} ${button2.textColor}`}>{button2.text}</button>
+                    <button onClick={() => { navigate("/contact") }} className={`rounded-lg font-["Montserrat"] font-bold text-xs px-5 py-4 sm:text-[13px] md:text-base md:px-7 md:py-5 lg:text-[13px] lg:px-5 lg:py-4 xl:text-base xl:px-9 bg-gradient-to-r ${button1.gradient} ${button1.textColor} transition-transform transform hover:scale-110 duration-150 ease-in`}>{button1.text}</button>
+                    <button onClick={() => {
+                        document.getElementById("homeAbout").scrollIntoView({ behavior: "smooth", block: "center" })
+                    }} className={`font-["Montserrat"] text-xs font-bold px-5 py-4 sm:text-[13px] md:text-base md:px-7 md:py-5 lg:text-[13px] lg:px-5 lg:py-4 border-2 xl:text-base xl:px-9 ${button2.border} ${button2.textColor} transition-all duration-150 ease-in hover:bg-[#131313] hover:text-white`}>{button2.text}</button>
+
                 </div>
             </div>
         </div>
