@@ -1,116 +1,184 @@
-import React from 'react'
-import { useNavigate } from "react-router-dom"
-import logo from '../assets/logo-white.png'
-import facebook from '../assets/facebook-icon.png'
-import instagram from '../assets/instagram-icon.png'
-import linkedin from '../assets/linkedin-icon.png'
-import twitter from '../assets/twitter-icon.png'
-import location from '../assets/location.png'
-import phone_call from '../assets/phone_call.png'
-import mail from '../assets/mail.png'
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
+import logo from "../assets/logo-removebg-preview.png";
+import facebook from "../assets/facebook-icon.png";
+import instagram from "../assets/instagram-icon.png";
+import linkedin from "../assets/linkedin-icon.png";
+import twitter from "../assets/twitter-icon.png";
+import location from "../assets/location.png";
+import phone_call from "../assets/phone_call.png";
+import mail from "../assets/mail.png";
 
 const Footer = () => {
-    const navigate = useNavigate()
-    return (
-        <>
-            <div className='xl:flex flex-col mt-20 bg-gradient-to-t xl:bg-gradient-to-r from-[#3E187A] to-[#994ECC] text-white px-1 md:px-3 xl:px-0 pt-6 xl:pt-8 pb-5'>
-                <div className='xl:flex justify-between mx-auto w-full max-w-[600px] xl:max-w-[1350px] px-4 pb-6 xl:pb-0'>
-                    <div className='flex flex-col justify-between space-y-11 xl:space-y-16 h-full'>
-                        <div className='flex items-center justify-center xl:justify-normal gap-3'>
-                            <img src={logo} alt="logo" className='w-[58px] h-[68px] sm:w-[68px] sm:h-[78px]' />
-                            <div className='space-y-1'>
-                                <p className='font-["otomanopee-one"] sm:text-lg'>SURAKSHA SECURITY</p>
-                                <div className='h-[1px] bg-white'></div>
-                                <p className='font-["Red_Hat_Display"] text-xs sm:text-sm font-semibold'>Trusted Security Solutions</p>
-                            </div>
-                        </div>
-                        <div className='space-y-4'>
-                            <p className='font-["Philosopher"] text-lg'>FOLLOW US ON</p>
-                            <div className='flex space-x-1'>
-                                <img src={facebook} alt="facebook" className='w-[30px] h-[30px] hover:invert transition-all duration-100 ease-in cursor-pointer' />
-                                <img src={instagram} alt="instagram" className='w-[30px] h-[30px] hover:invert transition-all duration-100 ease-in cursor-pointer' />
-                                <img src={linkedin} alt="linkedin" className='w-[30px] h-[30px] hover:invert transition-all duration-100 ease-in cursor-pointer' />
-                                <img src={twitter} alt="twitter" className='w-[30px] h-[30px] hover:invert transition-all duration-100 ease-in cursor-pointer' />
-                            </div>
-                            <p className='text-[#D8D8D8] lg:w-[400px] font-["Philosopher"] text-sm leading-4 xl:leading-[18px]'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  Lorem ipsum dolor sit amet, consectetur adipiscing elitquis nostrud exercitation ullamco laboris
-                            </p>
-                        </div>
-                    </div>
-                    <div className='pt-10 space-y-5 hidden xl:block'>
-                        <h1 className='font-["Red_Hat_Display"] text-xl'>QUICK LINKS</h1>
-                        <div className='font-["Philosopher"] space-y-2 text-[15px]'>
-                            <p onClick={() => navigate("/")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Home</p>
-                            <p onClick={() => navigate("/about")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>About Us</p>
-                            <p onClick={() => navigate("/services")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Services</p>
-                            <p onClick={() => navigate("/career")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Career</p>
-                            <p onClick={() => navigate("/contact")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Contact Us</p>
-                            <p onClick={() => navigate("/")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Career Form</p>
-                            <p onClick={() => navigate("/")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Brochure</p>
-                        </div>
-                    </div>
-                    <div className='pt-10 space-y-5 hidden xl:block'>
-                        <h1 className='font-["Red_Hat_Display"] text-xl'>SERVICES</h1>
-                        <div className='font-["Philosopher"] space-y-2 text-[15px]'>
-                            <p onClick={() => navigate("/services#securityGuards")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Security Guards</p>
-                            <p onClick={() => navigate("/services#ladySecurity")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Lady Security Guards</p>
-                            <p onClick={() => navigate("/services#bouncers")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Bouncers and Bodyguards</p>
-                            <p onClick={() => navigate("/services#gunmen")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Gun Men</p>
-                            <p onClick={() => navigate("/services#gunmen")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Revolver Men</p>
-                            <p onClick={() => navigate("/services#securityOfficers")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Security Supervisors</p>
-                            <p onClick={() => navigate("/services#securityOfficers")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Security Officers</p>
-                        </div>
-                    </div>
-                    <div className='flex justify-between xl:hidden'>
-                        <div className='pt-[70px] space-y-5'>
-                            <h1 className='font-["Red_Hat_Display"] text-xl'>QUICK LINKS</h1>
-                            <div className='font-["Philosopher"] space-y-2 text-sm md:text-[15px]'>
-                                <p onClick={() => navigate("/")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Home</p>
-                                <p onClick={() => navigate("/about")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>About Us</p>
-                                <p onClick={() => navigate("/services")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Services</p>
-                                <p onClick={() => navigate("/career")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Career</p>
-                                <p onClick={() => navigate("/contact")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Contact Us</p>
-                                <p onClick={() => navigate("/")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Career Form</p>
-                                <p onClick={() => navigate("/")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Brochure</p>
-                            </div>
-                        </div>
-                        <div className='pt-[70px] space-y-5'>
-                            <h1 className='font-["Red_Hat_Display"] text-xl'>SERVICES</h1>
-                            <div className='font-["Philosopher"] space-y-2 text-sm md:text-[15px]'>
-                                <p onClick={() => navigate("/services#securityGuards")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Security Guards</p>
-                                <p onClick={() => navigate("/services#ladySecurity")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Lady Security Guards</p>
-                                <p onClick={() => navigate("/services#bouncers")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Bouncers and Bodyguards</p>
-                                <p onClick={() => navigate("/services#gunmen")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Gun Men</p>
-                                <p onClick={() => navigate("/services#gunmen")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Revolver Men</p>
-                                <p onClick={() => navigate("/services#securitySupervisors")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Security Supervisors</p>
-                                <p onClick={() => navigate("/services#securityOfficers")} className='hover:translate-x-3 hover:text-black cursor-pointer transition-all duration-200 ease-in-out'>Security Officers</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='pt-[70px] xl:pt-10 space-y-5 xl:w-[300px] mx-auto xl:mx-0'>
-                        <h1 className='font-["Red_Hat_Display"] text-xl'>CONTACTS</h1>
-                        <div className='font-["Philosopher"] space-y-4 xl:space-y-3 text-[15px]'>
-                            <div className='flex space-x-3'>
-                                <img src={location} alt="" className='h-6 w-6 rounded-full' />
-                                <p className='leading-4 xl:leading-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                            <div className='flex space-x-3'>
-                                <img src={phone_call} alt="" className='h-6 w-6 rounded-full' />
-                                <p>7439537213 , 9474812394</p>
-                            </div>
-                            <div className='flex space-x-3'>
-                                <img src={mail} alt="" className='h-6 w-6' />
-                                <p>surakshasecurity@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr className='border-[#9b9b9b] h-[1px] w-full max-w-[600px] xl:max-w-[1350px] mx-auto my-5 max-[425px]:w-[95%]' />
-                <p className='font-["Red_Hat_Display"] text-center text-[13px] xl:text-[15px]'>DESIGNED AND DEVELOPED BY : AYAN | SHIVANSHU</p>
-            </div>
-        </>
-    )
-}
+  const navigate = useNavigate();
 
-export default Footer
+  const linkClass =
+    'cursor-pointer transition-all duration-200 ease-in-out hover:translate-x-2 hover:text-[#DAAE00]';
+
+  return (
+    <>
+      <footer className="mt-20 text-white">
+        {/* subtle black-to-black gradient with gold accent border */}
+        <div className="bg-gradient-to-r from-black via-[#0b0b0b] to-black border-t border-[#DAAE00]/30">
+          <div className="mx-auto w-full max-w-[600px] xl:max-w-[1350px] px-4 py-8 md:py-10">
+            {/* top row */}
+            <div className="grid grid-cols-1 xl:grid-cols-4 gap-10">
+              {/* Brand + social + mission */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-3 justify-center xl:justify-start">
+                  <img
+                    src={logo}
+                    alt="Lionsgate Security logo"
+                    className="w-[58px] h-[68px] sm:w-[68px] sm:h-[78px]"
+                  />
+                  <div className="space-y-1">
+                    <p className='font-["otomanopee-one"] sm:text-lg tracking-wide'>
+                      LIONSGATE SECURITY
+                    </p>
+                    <div className="h-px bg-white/30" />
+                    <p className='font-["Red_Hat_Display"] text-xs sm:text-sm font-semibold text-white/80'>
+                      Prevention • Protection • Safety
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <p className='font-["Philosopher"] text-lg text-[#DAAE00] text-center xl:text-left'>
+                    FOLLOW US
+                  </p>
+                  <div className="flex gap-2 justify-center xl:justify-start">
+                    <a href="#" aria-label="Facebook">
+                      <img
+                        src={facebook}
+                        alt="Facebook"
+                        className="w-[30px] h-[30px] hover:invert transition"
+                      />
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                      <img
+                        src={instagram}
+                        alt="Instagram"
+                        className="w-[30px] h-[30px] hover:invert transition"
+                      />
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                      <img
+                        src={linkedin}
+                        alt="LinkedIn"
+                        className="w-[30px] h-[30px] hover:invert transition"
+                      />
+                    </a>
+                    <a href="#" aria-label="Twitter/X">
+                      <img
+                        src={twitter}
+                        alt="Twitter/X"
+                        className="w-[30px] h-[30px] hover:invert transition"
+                      />
+                    </a>
+                  </div>
+
+                  <p className='text-[#D8D8D8] font-["Philosopher"] text-sm leading-5 text-center xl:text-left'>
+                    Licensed, insured security for condos, construction, retail, and events across the GTA.
+                    Uniformed guards, mobile patrol, gatehouse, and remote video monitoring—backed by 24/7
+                    dispatch and digital reporting.
+                  </p>
+                </div>
+              </div>
+
+              {/* Quick links (desktop) */}
+              <div className="hidden xl:block space-y-5">
+                <h2 className='font-["Red_Hat_Display"] text-xl'>QUICK LINKS</h2>
+                <div className='font-["Philosopher"] space-y-2 text-[15px]'>
+                  <p onClick={() => navigate("/")} className={linkClass}>Home</p>
+                  <p onClick={() => navigate("/about")} className={linkClass}>About Us</p>
+                  <p onClick={() => navigate("/services")} className={linkClass}>Services</p>
+                  <p onClick={() => navigate("/career")} className={linkClass}>Careers</p>
+                  <p onClick={() => navigate("/contact")} className={linkClass}>Contact</p>
+                  {/* Optional assets */}
+                  {/* <p onClick={() => navigate("/apply")} className={linkClass}>Apply Now</p> */}
+                  {/* <p onClick={() => navigate("/brochure")} className={linkClass}>Brochure</p> */}
+                </div>
+              </div>
+
+              {/* Services (desktop) */}
+              <div className="hidden xl:block space-y-5">
+                <h2 className='font-["Red_Hat_Display"] text-xl'>SERVICES</h2>
+                <div className='font-["Philosopher"] space-y-2 text-[15px]'>
+                  <p onClick={() => navigate("/services#guards")} className={linkClass}>Security Guards</p>
+                  <p onClick={() => navigate("/services#concierge")} className={linkClass}>Concierge Security</p>
+                  <p onClick={() => navigate("/services#mobile")} className={linkClass}>Mobile Patrol</p>
+                  <p onClick={() => navigate("/services#gatehouse")} className={linkClass}>Gatehouse / Access</p>
+                  <p onClick={() => navigate("/services#cctv")} className={linkClass}>Remote Video Surveillance</p>
+                  <p onClick={() => navigate("/services#events")} className={linkClass}>Events Security</p>
+                </div>
+              </div>
+
+              {/* Quick links + Services (mobile/tablet) */}
+              <div className="xl:hidden grid grid-cols-2 gap-8 pt-6">
+                <div>
+                  <h2 className='font-["Red_Hat_Display"] text-lg mb-3'>QUICK LINKS</h2>
+                  <div className='font-["Philosopher"] space-y-2 text-sm md:text-[15px]'>
+                    <p onClick={() => navigate("/")} className={linkClass}>Home</p>
+                    <p onClick={() => navigate("/about")} className={linkClass}>About Us</p>
+                    <p onClick={() => navigate("/services")} className={linkClass}>Services</p>
+                    <p onClick={() => navigate("/career")} className={linkClass}>Careers</p>
+                    <p onClick={() => navigate("/contact")} className={linkClass}>Contact</p>
+                  </div>
+                </div>
+                <div>
+                  <h2 className='font-["Red_Hat_Display"] text-lg mb-3'>SERVICES</h2>
+                  <div className='font-["Philosopher"] space-y-2 text-sm md:text-[15px]'>
+                    <p onClick={() => navigate("/services#guards")} className={linkClass}>Security Guards</p>
+                    <p onClick={() => navigate("/services#concierge")} className={linkClass}>Concierge Security</p>
+                    <p onClick={() => navigate("/services#mobile")} className={linkClass}>Mobile Patrol</p>
+                    <p onClick={() => navigate("/services#gatehouse")} className={linkClass}>Gatehouse / Access</p>
+                    <p onClick={() => navigate("/services#cctv")} className={linkClass}>Remote Video Surveillance</p>
+                    <p onClick={() => navigate("/services#events")} className={linkClass}>Events Security</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Contacts */}
+              <div className="space-y-5">
+                <h2 className='font-["Red_Hat_Display"] text-xl'>CONTACT</h2>
+                <div className='font-["Philosopher"] space-y-4 text-[15px]'>
+                  <div className="flex gap-3">
+                    <img src={location} alt="" className="h-6 w-6 rounded-full" />
+                    <p className="leading-5 text-white/90">
+                      10 Milner Business Court, Suite 300<br />
+                      Scarborough, ON M1B 3C6
+                    </p>
+                  </div>
+                  <div className="flex gap-3">
+                    <img src={phone_call} alt="" className="h-6 w-6 rounded-full" />
+                    <p className="text-white/90">24/7 Dispatch: <a href="tel:+16472203119" className="text-[#DAAE00] hover:underline">647-220-3119</a></p>
+                  </div>
+                  <div className="flex gap-3">
+                    <img src={mail} alt="" className="h-6 w-6" />
+                    <p className="text-white/90">
+                      <a href="mailto:info@lionsgate-concierge.com" className="hover:underline">
+                        info@lionsgate-concierge.com
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* bottom line */}
+            <hr className="border-white/10 my-6" />
+            <div className="text-center text-sm text-white/70">
+              © {new Date().getFullYear()} Lionsgate Security. All rights reserved.
+              {/* If you want to keep credits, append here:
+              <span className="mx-2">•</span> Design & Dev: Your Name
+              */}
+            </div>
+          </div>
+        </div>
+      </footer>
+    </>
+  );
+};
+
+export default Footer;
